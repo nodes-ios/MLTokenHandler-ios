@@ -8,6 +8,11 @@
 import Foundation
 
 public struct RefreshBody: Encodable {
-    let token: String
+        
+    public let token: String
+    
+    public init(token: String) {
+        self.token = token
+    }
 }
 
